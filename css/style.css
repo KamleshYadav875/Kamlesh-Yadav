@@ -1,0 +1,130 @@
+html
+{
+  scroll-behavior: smooth;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  
+}
+
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  
+}
+#myDiv section
+{
+  margin: 
+}
+#first
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/1.jpg');
+  background-color: rgba(0,0,0,0.5);
+}
+#im
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+.navbar
+{
+  height: 80px;
+  background-color: #424242;
+  
+  
+}
+ul
+{
+  float: right;
+}
+ul li:hover
+{
+  background-color: #658956;
+}
+ul li
+{
+  color: blue;
+}
+.collapse 
+{
+  float: right;
+}
+#home img
+{
+  height: 100%;
+  width: 200px;
+  height: 200px;
+  margin-top: 10%;
+  border: 3px solid #f58df5;
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  ul
+  {
+    background-color: #424242;
+  }
+  
+  .navbar-nav
+  {
+    margin-left: 0%
+  }
+  .collapse
+  {
+    float: left;
+  }
+}
+
+.animate-skill {
+  position: relative;
+  -webkit-animation-name: animateskill;
+  -webkit-animation-duration: 5s;
+  animation-name: animateskill;
+  animation-duration: 5s
+}
+
+@-webkit-keyframes animateskill {
+  from { left:-100px; opacity:0 } 
+  to { right:0px; opacity:1 }
+}
+
+@keyframes animateskill { 
+  from{ left: :-100px; opacity:0 } 
+  to{ right:0; opacity:1 }
+}
+
+
+#education h4
+{
+  padding-top: 20px;
+}
